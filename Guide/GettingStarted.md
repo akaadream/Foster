@@ -5,8 +5,8 @@ This documentation will provides you all the basics you may know before starting
 ## Installation
 
 Foster is available by 2 ways:
-- You can as a [NuGeT package](https://www.nuget.org/packages/FosterFramework):
-> Note that current NuGeT package is not up to date with the latest changes of the framework at time of writing. This documentation is covering the current `app-refactor` branch which will be soon merged onto the main branch.
+- You can use it as a [NuGeT package](https://www.nuget.org/packages/FosterFramework):
+> Note that the current NuGeT package is not up to date with the latest changes of the framework at time of writing. This documentation is covering the current `app-refactor` branch which will be soon merged onto the main branch.
 
 ```
 dotnet add package FosterFramework --version 0.2.0
@@ -15,7 +15,7 @@ dotnet add package FosterFramework --version 0.2.0
 
 ## Your first game!
 
-To create your first game using Foster, you create an App. This is a base class of the Foster's Framework that you must inherit.
+To create your first game using Foster, you have to create an `App`. This is a base class from the Foster's Framework that you must inherit.
 Inside it you'll have all you need to create the life-cycle or your game:
 ```csharp
 public class MyGame : App
@@ -59,7 +59,7 @@ Annnd that's it! Now you can run your project and you'll see a window with the n
 
 Now, let's say you want to change the color of the background. You will need a batcher.
 
-> The batcher is the class that will "create" all the drawings you want to display your game content (images, texts, rectangles, ...) by communicating with your graphics card.
+> The batcher is the class that will "create" all the drawings things (images, texts, rectangles, ...) when you want to display your game's content.
 
 Let's create the batcher:
 ```diff
